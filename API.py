@@ -1,15 +1,13 @@
-import os
 import openai
-OPENAI_API_KEY = "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"
-openai.organization = "org-iT97wlI5m4glS3KXH4Q1IyIT"
-openai.api_key = os.getenv(OPENAI_API_KEY)
-openai.Model.list()
+
+# Initialize the OpenAI API client
+openai.api_key = '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'
 
 
 def get_space_itinerary():
     # Send a prompt to the OpenAI API
     response = openai.Completion.create(
-        engine="davinci",
+        engine="Davinci",
         prompt="Recommend a space travel itinerary for a week-long trip.",
         max_tokens=200
     )
