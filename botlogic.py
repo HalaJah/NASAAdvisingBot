@@ -4,7 +4,7 @@ import sys
 import os
 
 # Initialize the OpenAI API client
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = ''
 
 
 # Load planet data from .txt files into a dictionary
